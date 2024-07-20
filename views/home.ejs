@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= RESTAURANT.name %></title>
+</head>
+<body>
+
+  <h1>Home Page</h1>
+  <br>
+  <p>Name: <%= RESTAURANT.name %></p>
+  <p>Address: <%= RESTAURANT.address %></p>
+  <p>Phone: <%= RESTAURANT.phone %></p>
+
+  <!-- level up part -->
+<% if (RESTAURANT.isOpen === true){ %>
+  <p>Yes we are open!</p>
+
+<% } else{ %>
+  <p>Sorry, we are closed</p>
+  <% } %>
+
+</body>
+</html>
